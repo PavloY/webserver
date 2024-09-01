@@ -1,0 +1,24 @@
+- go mod init WEB_SERVER
+- https://github.com/golang-standards/project-layout
+- cmd/<app-name>/main.go -> entry point initialization
+- go build -v ./cmd/api/
+- go build .
+- go run main.go
+- internal/app/<app-name>/<app-name.go> -> server core initialization
+- https://github.com/BurntSushi/toml
+- go get github.com/BurntSushi/toml
+- go get -u github.com/sirupsen/logrus
+- go get -u github.com/gorilla/mux
+- go get -u github.com/joho/godotenv
+- go get -u github.com/lib/pq
+- power_shell -> 
+-> Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+-> Invoke-Expression (New-Object System.Net.WebClient).DownloadString('https://get.scoop.sh') -> non admin
+- scoop install migrate
+go install -tags 'postgres' github.com/golang-migrate/migrate/v4/cmd/migrate@latest
+path -> C:\Users\<user>\go\bin
+- migrate create -ext sql -dir migrations UsersMigration
+- migrate -path migrations -database "postgres://localhost:5432/webserver?sslmode=disable&user=postgres&password=postgres" up
+- migrate -path migrations -database "postgres://localhost:5432/webserver?sslmode=disable&user=postgres&password=postgres" down
+- go get -u github.com/auth0/go-jwt-middleware
+- go get -u github.com/form3tech-oss/jwt-go
