@@ -1,0 +1,15 @@
+.idea/
+.vscode/
+*.xml
+*.out
+*.log
+*.test
+*.exe
+glide.lock
+.gometaliner.json
+coverage.xml
+src/static-analysis.xml
+cover-cobertura.xml
+bin/
+cover.out.tmp
+.DS_Store
