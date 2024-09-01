@@ -13,3 +13,4 @@ cover-cobertura.xml
 bin/
 cover.out.tmp
 .DS_Store
+.md
